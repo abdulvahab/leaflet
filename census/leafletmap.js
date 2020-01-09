@@ -2,7 +2,7 @@ window.onload = function () {
   var basemap = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
    });
-
+   //var baseLayers = getCommonBaseLayers(map);
     // EDIT HERE: get an access token, replace 'YOURTOKENHERE' with something like "pk.eyJ1Ijoia2ltcGhhbTU0IiwiYSI6IkdJX0tvM2cifQ.fVsdGC_QJrFYZ3SxZCsvhQ"
     L.mapbox.accessToken = 'pk.eyJ1IjoiYWtoYXJhZGkiLCJhIjoiY2s1NXk5aTdiMDFsMjNtbzFtZTZ0ZWdhOSJ9.yzU4BiBWWuTuw4gSHrw1tg';
 
