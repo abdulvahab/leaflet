@@ -58,8 +58,9 @@ function resetHighlight(e) {
     info.update();
 };
 
-function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
+function areaPage(e) {
+    url = 'https://test34.d-moss.org/' + 'dengue/' + fd.lang + '/province/' + e.target.feature.properties.areaid;
+    window.location.href = url;
 };
 
 
@@ -72,7 +73,7 @@ $.getJSON("province.geojson", function(data) {
         layer.on({
             mouseover:highlightFeature,
             mouseout: resetHighlight,
-            click: zoomToFeature
+            click: areaPage
         });
       },
 
